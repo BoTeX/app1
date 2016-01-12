@@ -1,0 +1,14 @@
+{% extends 'mainsite/baseBuyPage.html' %}
+{% block content %}
+{% if not items %}
+    <div>NO ITEMS FOUND</div>
+{% else %}
+    {% for item in items %}
+        <a class="single_item" href="{% url 'item' pk=item.pk %}">
+            <div class="single_item_name">{{ item.name }}</div>
+            <div class="single_item_text">{{ item.title }}</div>
+            <div class="single_item_pub_date">{{ item.pub_date }}</div>
+        </a>
+    {% endfor %}
+{% endif %}
+{% endblock content %}

@@ -1,0 +1,42 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Good store</title>
+        <link rel="stylesheet" href="{% static 'css/sellPage.css' %}">
+        <link rel="shortcut icon" href="{% static 'pics/mainPage.ico' %}" type="image/x-icon">
+        <meta charset=utf-8>
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu:500&subset=cyrillic,latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div class="content">
+            <span class="main-text">Create your business here!</span>
+            <div id="slideshow">
+                <div>
+                    <img src="{% static 'pics/slider1.jpg' %}">
+                </div>
+                <div>
+                    <img src="{% static 'pics/slider2.jpg' %}">
+                </div>
+                <div>
+                    <img src="{% static 'pics/slider3.jpg' %}">
+                </div>
+                <div>
+                    <img src="{% static 'pics/slider4.jpg' %}">
+                </div>
+                <div>
+                    <img src="{% static 'pics/slider5.jpg' %}">
+                </div>
+            </div>
+            <div id="main-forms">
+                <form method="POST" id="form">{% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="button">Save</button>
+                </form>
+            </div>
+            <span id="footer">For VIP status call +12323232323</span>
+        </div>
+        <script src="{% static 'js/jquery-1.11.3.js' %}"></script>
+        <script src="{% static 'js/sellPage.js' %}"></script>
+    </body>
+</html>

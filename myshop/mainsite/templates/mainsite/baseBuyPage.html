@@ -1,0 +1,23 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Good store</title>
+        <link rel="stylesheet" href="{% static 'css/buyPage.css' %}">
+        <link rel="shortcut icon" href="{% static 'pics/mainPage.ico' %}" type="image/x-icon">
+        <meta charset=utf-8>
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu:500&subset=cyrillic,latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div class="content">
+            <a href="/buyPage/" class="main-text" align="center">Good shop</a>
+            <div id="main-content">
+                {% block content %}
+                {% endblock %}
+            </div>
+            <a href="/sellPage/" id="footer">Sell your things here</a>
+        </div>
+        <script src="{% static 'js/jquery-1.11.3.js' %}"></script>
+        <script src="{% static 'js/buyPage.js' %}"></script>
+    </body>
+</html>

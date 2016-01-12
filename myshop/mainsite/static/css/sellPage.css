@@ -1,0 +1,186 @@
+body{
+  background-image: url("../pics/sellPageBackground.png");
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: 'Ubuntu', sans-serif, Arial;
+}
+.content{
+  display: block;
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  padding: auto;
+  border: none;
+}
+.main-text{
+  display: block;
+  width: 970px;
+  background-color: #FE6666;
+  font-size: 45px;
+  color: #2E2E2E;
+  cursor: default;
+  padding: 15px;
+}
+#slideshow {
+  position: relative;
+  width: 1000px;
+  height: 400px;
+}
+#slideshow > div {
+  position: absolute;
+}
+#main-forms{
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: block;
+  background-color: #2E2E2E;
+  width: 1000px;
+  padding-top: 10px;
+}
+#form{
+  display: block;
+  width: 900px;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  font-size: 25px;
+}
+[for="id_text"]{
+  display: block;
+}
+[id="id_title"]{
+  display: inline-block;
+  height: 25px;
+  width: 600px;
+  outline: none;
+  margin-left: 150px;
+  font-size: 0.9em;
+  font-family: 'Ubuntu', sans-serif, Arial;
+  padding: 0 3px;
+  color: #2E2E2E;
+}
+[id="id_text"]{
+  width: 819px;
+  resize: none;
+  outline: none;
+  margin-top: 15px;
+  font-size: 0.7em;
+  font-family: 'Ubuntu', sans-serif, Arial;
+  padding: 0 2px;
+  color: #2E2E2E;
+}
+[id="id_price"]{
+  height: 25px;
+  width: 100px;
+  outline: none;
+  font-size: 0.7em;
+  font-family: 'Ubuntu', sans-serif, Arial;
+  margin-left: 100px;
+  color: #2E2E2E;
+}
+[id="id_category"]{
+  font-family: 'Ubuntu', sans-serif, Arial;
+  outline: none;
+  font-size: 0.7em;
+  height: 25px;
+  margin-left: 52px;
+  background-color: white;
+  color: #2E2E2E;
+}
+[id="id_photo"]{
+  font-family: 'Ubuntu', sans-serif, Arial;
+  outline: none;
+  font-size: 0.7em;
+  height: 25px;
+  margin-left: 88px;
+  color: #2E2E2E;
+}
+[id="id_name"]{
+  font-family: 'Ubuntu', sans-serif, Arial;
+  outline: none;
+  font-size: 0.7em;
+  height: 25px;
+  margin-left: 91px;
+  width: 290px;
+  color: #2E2E2E;
+}
+[id="id_number"]{
+  font-family: 'Ubuntu', sans-serif, Arial;
+  outline: none;
+  font-size: 0.7em;
+  height: 25px;
+  margin-left: 65px;
+  width: 290px;
+  color: #2E2E2E;
+}
+[id="id_email"]{
+  font-family: 'Ubuntu', sans-serif, Arial;
+  outline: none;
+  font-size: 0.7em;
+  height: 25px;
+  margin-left: 95px;
+  width: 290px;
+  color: #2E2E2E;
+}
+.errorlist{
+  font-size: 15px;
+  color: white;
+  margin-bottom: 0;
+}
+p{
+  margin-top: 10px;
+}
+#footer{
+  display: inline-block;
+  width: 200px;
+  height: 20px;
+  font-size: 12px;
+  background-color: black;
+  color: #2E2E2E;
+  padding: 0;
+  border: none;
+  padding-top: 6px;
+  padding-left: 800px;
+  cursor: default;
+}
+button{
+  display: inline-block;
+  margin-left: 300px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  padding: 5px 0 0 0;
+  border: none;
+  width: 300px;
+  height: 100px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 20px;
+  color: #F7F6F6;
+  text-decoration: none;
+  font-size: 45px;
+  background-color: #2E2E2E;
+  font-family: 'Ubuntu', sans-serif, Arial;
+}
+button:hover{
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+  color: black;
+  background-color: #FE6666;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}

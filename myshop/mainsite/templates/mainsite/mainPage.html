@@ -1,0 +1,17 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Good store</title>
+        <link rel="stylesheet" href="{% static 'css/mainPage.css' %}">
+        <link rel="shortcut icon" href="{% static 'pics/mainPage.ico' %}" type="image/x-icon">
+        <meta charset=utf-8>
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu:500&subset=cyrillic,latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div id="enter">
+            <a class="choice choice1" href="/buyPage/">Buy</a>
+            <a class="choice" href="/sellPage/">Sell</a>
+        </div>
+        <script src="{% static 'js/prefixfree.min.js' %}"></script>
+    </body>
+</html>
